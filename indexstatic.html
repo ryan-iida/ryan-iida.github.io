@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ryan issa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">Ryan Issa</a>
+    </div>
+    <div class="container">
+      <div class="box navbar">
+        <div class="box navbar nav1">
+          <a data-target="nav2-work">Work</a>
+          <a data-target="nav2-photography">Photography</a>
+          <a data-target="nav2-writing">Writing</a>
+          <a>About</a>
+        </div>
+        <nav id="nav2-work" class="nav2">
+          <a>Work 1</a>
+          <a>Work 2</a>
+        </nav>
+        <nav id="nav2-photography" class="nav2">
+          <a> <br /></a>
+          <a>Photography 1</a>
+          <a>Photography 2</a>
+        </nav>
+        <nav id="nav2-writing" class="nav2">
+          <a> <br /></a>
+          <a> <br /></a>
+          <a>Writing 1</a>
+          <a>Writing 2</a>
+        </nav>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll(".nav1 a");
+            const nav2s = document.querySelectorAll(".nav2");
+
+            links.forEach((link) => {
+              link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("data-target");
+
+                // Remove active class from all links
+                links.forEach((link) => {
+                  link.classList.remove("active");
+                });
+
+                // Add active class to the clicked link
+                this.classList.add("active");
+
+                nav2s.forEach((nav2) => {
+                  if (nav2.id === targetId) {
+                    nav2.style.display = "block";
+                  } else {
+                    nav2.style.display = "none";
+                  }
+                });
+              });
+            });
+          });
+        </script>
+      </div>
+      <div class="box content">
+        <img src="images/refuge.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
