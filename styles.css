@@ -255,3 +255,11 @@ a.projecttitle {
 .citations h1 {
   font-size: 12pt;
 }
+
+a:hover {
+  color: rgb(236, 0, 140);
+}
+
+sup {
+  color: rgb(236, 0, 140);
+}
