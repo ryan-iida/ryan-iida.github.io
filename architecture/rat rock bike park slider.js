@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { src: "rat rock bike park/6.png", description: "Thermal Diagram" },
     { src: "rat rock bike park/7.png", description: "Structural Diagram" },
     { src: "rat rock bike park/8.png", description: "Site Props Diagram" },
-    { src: "rat rock bike park/9.png", description: "Rock Concept Model" },
+    { src: "rat rock bike park/9.jpeg", description: "Rock Concept Model" },
     { src: "rat rock bike park/10.png", description: "Rock Concept Model" },
   ];
 
