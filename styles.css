@@ -30,6 +30,30 @@
   flex: 1;
 }
 
+.nav-main {
+  display: block;
+  flex: 1;
+}
+
+.nav-main a {
+  display: block;
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: 100;
+  line-height: 1.25;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.nav-main a.active {
+  color: rgb(236, 0, 140);
+}
+
+.nav-main a:hover {
+  color: rgb(236, 0, 140);
+}
+
 .nav2 {
   display: none;
 }
@@ -262,4 +286,29 @@ a:hover {
 
 sup {
   color: rgb(236, 0, 140);
+}
+
+.slider,
+.slider-nav {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  cursor: default;
+}
+
+.slider-nav {
+  /* Ensure the navigation arrows maintain pointer cursor for clickability */
+  cursor: pointer;
+  /* Prevent any highlight effects */
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+/* Optional: Prevent highlighting on the entire image container */
+.project-images {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

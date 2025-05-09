@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Improving Thermal Comfort for Cyclists and Pedestrians by Considering Tree
+      Shading in Routing
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="shademaps.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href="../index.html">Ryan Issa</a>
+    </div>
+    <div class="container">
+      <div class="box navbar" id="nav-placeholder"></div>
+      <div class="box content">
+        <div class="project-header">
+          <h1>
+            Improving Thermal Comfort for Cyclists and Pedestrians by
+            Considering Tree Shading in Routing
+          </h1>
+        </div>
+        <div class="project-top">
+          <div class="project-images">
+            <img
+              id="main-project-image"
+              src="images/test1.jpg"
+              alt="Project Image"
+            />
+            <div class="slider">
+              <span class="slider-nav prev">&lt;</span>
+              <h1 class="image-description">description</h1>
+              <span class="slider-nav next">&gt;</span>
+            </div>
+          </div>
+          <div class="project-notes">
+            <h1>Status: Ongoing</h1>
+            <h1>For: Qi Li Group</h1>
+          </div>
+        </div>
+        <div class="project-bottom">
+          <h1>
+            Weather applications in cities like New York City do not illustrate
+            a complete picture; the climate experienced at the street level
+            varies greatly from street to street due to variations in the shade
+            produced by tree canopy cover and building geometry on a street by
+            street basis. The purpose of this project, Improving Thermal Comfort
+            for Cyclists and Pedestrians by Considering Tree Shading in Routing,
+            is to create an accessible navigation application that provides
+            pedestrians and cyclists with directions to their destinations in
+            New York City along preferable routes with the most shade amidst
+            varying weather conditions.
+          </h1>
+          <h1>
+            This project mainly utilized the python libraries osmnx and
+            pybdshadow in conjunction with building data provided by the City of
+            New York and New York City tree canopy data provided by Professor
+            Daniel Katz to inform a navigation routing algorithm that prefers
+            cycling routes that are more heavily shaded. This process is
+            accomplished by simulating building shadows and overlaying tree
+            canopy data over street networks to modify model edge weights to
+            make more heavily shaded streets preferable to the algorithm. The
+            clarity of these shadows were then modified to allow for faster
+            shadow calculation as edge weights were precalculated and tabulated
+            in advance across constant time intervals for faster routing on a
+            user’s end. While it is evident that this routing algorithm produces
+            routes different from a simple time-based algorithm, the extent to
+            which the routes calculated are more thermally-comfortable than
+            typical routes has yet to be measured.
+          </h1>
+          <h1>
+            This project is funded by the Aizen Climate Research Scholars Fund.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../nav.js"></script>
+  </body>
+</html>

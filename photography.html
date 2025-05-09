@@ -3,25 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ryan Issa</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Photography</title>
+    <link rel="stylesheet" href="../styles.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-      // Redirect to /index.html if the URL is just the root
-      if (window.location.pathname === "/") {
-        window.location.href = "/index.html";
-      }
-    </script>
   </head>
   <body>
     <div class="header">
-      <a href="index.html">Ryan Issa</a>
+      <a href="../index.html">Ryan Issa</a>
     </div>
     <div class="container">
       <div class="box navbar" id="nav-placeholder"></div>
       <div class="box content">
         <div class="project">
-          <img src="../images/test1.jpg" alt="" />
+          <img src="../photography/asakusa, ginza, odaiba/1.jpg" alt="" />
+          <a
+            class="projecttitle"
+            href="../photography/asakusa, ginza, odaiba.html"
+            >Seen and Not Seen</a
+          >
+        </div>
+        <div class="project">
+          <img src="../photography/salve/salve-1.jpg" alt="" />
+          <a class="projecttitle" href="../photography/salve.html">Salve</a>
+        </div>
+        <div class="project">
+          <img src="../photography/hong kong/hong kong-01.jpg" alt="" />
           <a class="projecttitle" href="../photography/hong kong.html"
             >Pictures Taken on a Student Visa</a
           >
@@ -30,6 +36,6 @@
     </div>
     <!-- Remove the old script and add these two lines -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="nav.js"></script>
+    <script src="../nav.js"></script>
   </body>
 </html>
